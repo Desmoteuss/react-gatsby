@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Travel Webside`,
+    title: `Travel`,
     description: `Travel webside showing the places worth to visit`,
+    author:`@gatsbyjs`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
