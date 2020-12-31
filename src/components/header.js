@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Header = () => {
   return (
-    <Nav> <NavLink to="/">EXPLORE </NavLink>
+    <Nav> <NavLink to="/">EXPLORE</NavLink>
 
     </Nav>
   )
