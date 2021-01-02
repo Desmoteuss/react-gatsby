@@ -1,10 +1,14 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from 'styled-components'
+import {FaBars} from 'react-ocons/fa'
 
 const Header = () => {
   return (
-    <Nav> <NavLink to="/">EXPLORE</NavLink>
+    <Nav>
+       <NavLink to="/">EXPLORE</NavLink>
+       <Bars />
+
 
     </Nav>
   )
@@ -29,4 +33,13 @@ text-decoration: none;
 padding: 0.1rem;
 height: 100%;
 cursor: pointer;
+`
+const Bars = styled(FaBars)`
+display: none;
+color: 'blue';
+@media screen and (max-width: 768px) {
+  display:block;
+  position: absolute;
+
+}
 `
