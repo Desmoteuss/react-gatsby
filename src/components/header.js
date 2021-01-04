@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from 'styled-components'
-import {FaBars} from 'react-ocons/fa'
+import {FaBars} from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ z-index:100;
 position: relative;
 ` 
 const NavLink = styled(Link)`
-color:black;
+color: black;
 display: flex;
 align-items: center;
 text-decoration: none;
