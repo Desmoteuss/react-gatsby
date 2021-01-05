@@ -16,6 +16,9 @@ const Header = () => {
           </NavLink>
          ))}
        </NavMenu>
+       <NavBtn>
+         
+       </NavBtn>
 
 
     </Nav>
@@ -64,3 +67,13 @@ margin-right: -50px;
   display: none;
 }
 `
+
+const NavBtn = styled.div`
+display: flex;
+align-items: center;
+margin-right: 24px;
+
+@media screen and (max-with: 768px)
+ {
+   display: none
+ }`
