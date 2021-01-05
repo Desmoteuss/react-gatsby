@@ -3,6 +3,7 @@ import React from "react"
 import styled from 'styled-components'
 import {FaBars} from 'react-icons/fa'
 import { menuData } from '../data/MenuData'
+import { Button } from "./Button"
 
 const Header = () => {
   return (
@@ -17,7 +18,9 @@ const Header = () => {
          ))}
        </NavMenu>
        <NavBtn>
-         
+         <Button primary="true " round="true" to="/trips">
+           Book a Flight
+         </Button>
        </NavBtn>
 
 
@@ -28,7 +31,7 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-background: transparent;
+background: red;
 height: 80px;
 display: flex;
 justify-content: space-between;
@@ -37,7 +40,7 @@ z-index: 100;
 position: relative;
 ` 
 const NavLink = styled(Link)`
-color: black;
+color: White;
 display: flex;
 align-items: center;
 text-decoration: none;
