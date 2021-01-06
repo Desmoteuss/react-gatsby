@@ -18,12 +18,10 @@ const Header = () => {
          ))}
        </NavMenu>
        <NavBtn>
-         <Button primary="true " round="true" to="/trips">
+         <Button primary="true" round="true" to="/trips">
            Book a Flight
          </Button>
        </NavBtn>
-
-
     </Nav>
   )
 }
@@ -66,7 +64,7 @@ const NavMenu = styled.div`
 display: flex;
 align-items: center;
 margin-right: -50px;
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   display: none;
 }
 `
@@ -75,8 +73,7 @@ const NavBtn = styled.div`
 display: flex;
 align-items: center;
 margin-right: 24px;
-
-@media screen and (max-with: 768px)
- {
-   display: none
- }`
+@media screen and (max-width: 768px) {
+  display: none;
+}
+`
