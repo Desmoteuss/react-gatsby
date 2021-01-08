@@ -11,8 +11,8 @@ export const Hero = () => {
         </HeroBg>
         <HeroContent>
          <HeroItems>
-            <HeroH1> Destination you want to see in your live !</HeroH1>
-            <HeroP> Make your live happier! Travel </HeroP>
+            <HeroH1> Unreal Destinations</HeroH1>
+            <HeroP> Destination you want to see in your live ! Make your live happier! </HeroP>
             <Button> Time to Travel!</Button>
         </HeroItems>
         </HeroContent>
@@ -35,10 +35,44 @@ margin-top: -80px;
 color: #fff;
 `
 
-const HeroBg = styled.div``
-const VideoBg = styled.video``
+const HeroBg = styled.div`
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+width 100%;
+height: 100%;
+overflow: hidden;`
 
-const HeroContent = styled.div``
-const HeroItems = styled.div``
-const HeroH1 = styled.div``
+const VideoBg = styled.video`
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+`
+
+const HeroContent = styled.div`
+z-index: 3;
+height: calc(100vh - 80px);
+max-height: 200%;
+padding: 0rem calc((100vw - 1300px) / 2 )
+border:2px solid red;
+`
+
+const HeroItems = styled.div`
+display: flex;
+flex-direction:  column;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 40vh;
+max-height: 100&;
+padding: 0;
+color: #FF4500	;
+line-height: 1.1;
+font-weight: bold;
+`
+const HeroH1 = styled.div`
+font-size: clamp(1rem, 8vw, 5rem)`
 const HeroP = styled.div``
