@@ -12,7 +12,7 @@ export const Hero = () => {
         <HeroContent>
          <HeroItems>
             <HeroH1> Unreal Destinations</HeroH1>
-            <HeroP> Destination you want to see in your live ! Make your live happier! </HeroP>
+            <HeroP> Destination you want to see in your live !  </HeroP>
             <Button> Time to Travel!</Button>
         </HeroItems>
         </HeroContent>
