@@ -94,7 +94,11 @@ line-height: 1.1;
 font-weight: bold;
 `
 const HeroH1 = styled.div`
-font-size: clamp(1rem, 8vw, 5rem)`
+font-size: clamp(1rem, 8vw, 5rem);
+margin-bottom: 1.5rem;
+letter-spacing: 3px;
+padding: 0 1rem;`
 const HeroP = styled.div`
     font-size: clamp(1rem, 3vw, 3rem);
-    margin-bottom: 2rem;`
+    margin-bottom: 2rem;
+    font-weight: 400;`
