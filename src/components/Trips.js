@@ -21,5 +21,9 @@ padding: 5rem calc((100vw - 1300px) /2);
 background: #fff;
 color: #fff`
 
-const ProductsHeading = styled.div``
+const ProductsHeading = styled.div`
+font-size: clamp(1.2rem, 5vw, 3rem);
+text-align: center;
+margin-bottom: 5rem;
+color: #000;`
 const ProductWraper = styled.div``
