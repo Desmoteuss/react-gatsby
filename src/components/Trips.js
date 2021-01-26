@@ -1,15 +1,20 @@
 import React from "react";
 
 import styled from "styled-components"
-
+import {useStaticQuery, graphql} from 'gatsby'
 
 const Trips = () => {
+const data = useStaticQuery(graphql`
+    query TripsQuery {
+
+    }
+    `)
+
     return (
         <ProductsContainer>
             <ProductsHeading> Heading</ProductsHeading>
             <ProductWraper> Wrapper </ProductWraper>
         </ProductsContainer>   
-
     )
 }
 
