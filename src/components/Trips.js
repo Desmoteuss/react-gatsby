@@ -6,6 +6,22 @@ import {useStaticQuery, graphql} from 'gatsby'
 const Trips = () => {
 const data = useStaticQuery(graphql`
     query TripsQuery {
+        allTripsJson{
+            edges {
+                node {
+                        alt
+                        button
+                        name
+                        img {
+                            childImageSharp {
+                                fluid {
+                                    src
+                                }
+                            }
+                        }
+                }
+            }
+        }
 
     }
     `)
