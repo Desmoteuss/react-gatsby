@@ -17,7 +17,7 @@ const data = useStaticQuery(graphql`
                         img {
                             childImageSharp {
                                 fluid {
-                                    src
+                                    ...GatsbyImageSharpFluid
                                 }
                             }
                         }
