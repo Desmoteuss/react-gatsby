@@ -27,7 +27,9 @@ const data = useStaticQuery(graphql`
 
     }
     `)
-
+function getTrips(data){
+    const tripsArray = []
+}
     return (
         <ProductsContainer>
             <ProductsHeading> Heading</ProductsHeading>
