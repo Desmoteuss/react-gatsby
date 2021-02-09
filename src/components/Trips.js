@@ -29,6 +29,19 @@ const data = useStaticQuery(graphql`
     `)
 function getTrips(data){
     const tripsArray = []
+    data.allTripsJson.edges.forEach((item,index) =>{
+        tripsArray.push(
+            <div key={index}>
+                <Img
+                src={item.node.img.childImageSharp.fluid.src}
+                alt={item.node.alt}
+                fluid={item.node.img.childImageSharp.fluid} 
+                />
+                
+            </div>
+
+        )
+    })
 }
     return (
         <ProductsContainer>
