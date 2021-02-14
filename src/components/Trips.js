@@ -64,4 +64,14 @@ font-size: clamp(1.2rem, 5vw, 3rem);
 text-align: center;
 margin-bottom: 5rem;
 color: #000;`
+
 const ProductWraper = styled.div``
+
+const ProductsCard = styled.div`
+line-height: 2;
+width: 100%
+height: 500px;
+postion: relative;
+border-radius: 10px;
+transition: 0.2s ease;
+`
