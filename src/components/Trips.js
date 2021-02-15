@@ -67,11 +67,14 @@ color: #000;`
 
 const ProductWraper = styled.div``
 
-const ProductsCard = styled.div`
+const ProductCard = styled.div`
 line-height: 2;
 width: 100%
 height: 500px;
 postion: relative;
 border-radius: 10px;
 transition: 0.2s ease;
+`
+const ProductImg = styled `
+line-height: 2;
 `
