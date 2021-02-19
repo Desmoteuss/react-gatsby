@@ -3,6 +3,8 @@ import React from "react";
 import styled from "styled-components"
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from "gatsby-image"
+import { Button } from "./Button"
+
 
 
 const Trips = () => {
@@ -65,7 +67,19 @@ text-align: center;
 margin-bottom: 5rem;
 color: #000;`
 
-const ProductWraper = styled.div``
+const ProductWraper = styled.div`
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+justify-items: center;
+padding: 0 2rem;
+@media screen and ( max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and ( max-width: 868px) {
+    grid-template-columns: 1fr;
+
+}`
 
 const ProductCard = styled.div`
 line-height: 2;
@@ -78,3 +92,4 @@ transition: 0.2s ease;
 const ProductImg = styled `
 line-height: 2;
 `
+
