@@ -90,6 +90,11 @@ border-radius: 10px;
 transition: 0.2s ease;
 `
 const ProductImg = styled `
-line-height: 2;
+height: 100%;
+max-width: 100%;
+position: absolute;
+border-radius: 10px;
+filter: brightness(70%);
+transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1)
 `
 
