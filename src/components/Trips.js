@@ -39,6 +39,12 @@ function getTrips(data){
                 alt={item.node.alt}
                 fluid={item.node.img.childImageSharp.fluid} 
                 />
+                <PrductInfo>
+                    <TextWrap>
+                        <ImLocation />
+                        <ProductTitle>{item.node.name}</ProductTitle>
+                    </TextWrap>
+                </PrductInfo>
                 
             </div>
 
